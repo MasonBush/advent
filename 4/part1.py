@@ -29,7 +29,7 @@ count = 0
 for origin_y in range(len(data)):
 	for origin_x in range(len(data[origin_y])):
 		
-		for offsets in variants.items():
+		for offsets in variants.values():
 			word = []
 
 			for offset in offsets:
