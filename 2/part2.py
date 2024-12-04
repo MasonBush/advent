@@ -37,16 +37,16 @@ def checkUnsafe(level):
 
 	unsafeAmmount = unsafeJumps + nochanges + changes
 	
+
 	if unsafeJumps > 0:
 		print(f"{positves = }, {negatives = }, {unsafeJumps = }, {nochanges = } | {unsafeAmmount = } | {unsafeAmmount <= 1} | {level}")
-
 
 	return unsafeAmmount <= 1
 	
 
 
 levels = []
-with open("data.txt", "r") as f:
+with open("test.txt", "r") as f:
 	for line in f.readlines():
 		numbers = []
 
@@ -58,7 +58,6 @@ with open("data.txt", "r") as f:
 
 safeLevels = 0
 for level in levels:
-
 	if checkUnsafe(level):
 		safeLevels += 1
 
