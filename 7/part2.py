@@ -50,10 +50,10 @@ for correctValue, equation in equations.items():
 			elif operation == 2:
 				variations[i] = int(f"{variations[i]}{nextNumber}")
 
+		if correctValue == variations[i]:
+			total += correctValue
+			break
 
-	
-	if correctValue in variations:
-		total += correctValue
 
 
 print(total)
