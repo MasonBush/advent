@@ -43,7 +43,6 @@ for k, v in antenna.items():
 		antenna_x, antenna_y = combos
 
 		dist = distance(antenna_x, antenna_y)
-
 		antinodePos = (antenna_y[0] - dist[0], antenna_y[1] - dist[1])
 		
 		x, y = antinodePos
