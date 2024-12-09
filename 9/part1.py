@@ -1,6 +1,6 @@
 
 diskMap = []
-with open("test3.txt", "r") as f:
+with open("input.txt", "r") as f:
 	line = list(f.read().rstrip())
 
 	lineSize = int((len(line) + 1) / 2)
